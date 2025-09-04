@@ -7,7 +7,7 @@ from collections import Counter
 from bs4 import BeautifulSoup
 import google.generativeai as genai
 
-GOOGLE_API_KEY = "AIzaSyBiJ77_YHWvYsYFbdunTVYQTKodndf0SkM" #Declaring gemini API Key
+GOOGLE_API_KEY = "" #Declaring gemini API Key - To Be Filled In - Key exists, must be added to file
 genai.configure(api_key=GOOGLE_API_KEY) #Configuring gemini
 model = genai.GenerativeModel("gemini-1.5-flash") #Setting type of model
 chat = model.start_chat() #Creating new gemini chat
